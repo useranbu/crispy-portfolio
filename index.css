@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body {
+  background-color: white;
+  padding: 0.5em;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  #start{
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+  }
+
+  #name{
+    text-align:center;
+    /* font-family: 'Sacramento', cursive; */
+    font-family:'Nanum Pen Script', cursive;
+    font-size: 30px;
+    font-weight: 400;
+    color: white;
+    padding: 0%;
+    margin: 0%;
+  }
+
+  #about p{
+    font-size: 25px; 
+    font-family: 'Nanum Pen Script', cursive;
+  }
+
+/* ---------Download--------- */
+
+ul,li {
+  text-align:center;
+  list-style-type: none;
+  color: white;
+  /* font-family: 'Maven Pro', sans-serif; */
+  /* font-family: 'Sacramento', cursive; */
+  font-family: 'Pacifico', cursive;
+  font-size: 20px;
+}
+
+/* -------Download------- */
+.button {
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+  --background: rgba(192,192,192,0.3);
+  --text: #fff;
+  --icon: #fff;
+  --icon-success: #16bf78;
+  display: flex;
+  outline: none;
+  border: 0;
+  padding: 0 22px 0 16px;
+  min-width: 147px;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 9px;
+  background: var(--background);
+  transition: transform 0.2s;
+}
+.button:active {
+  transform: scale(0.95);
+}
+.button ul {
+  margin: 0;
+  padding: 13px 0;
+  list-style: none;
+  text-align: center;
+  position: relative;
+  backface-visibility: hidden;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25px;
+  color: var(--text);
+}
+
+/* scroll to top start */
+#scrollToTop {
+  display: inline-block;
+  /* background-color: transparent; */
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s,  opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#scrollToTop::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  /* font-size: 2em; */
+  line-height: 50px;
+  /* color: #fff; */
+  color: #e73c7e;
+}
+#scrollToTop:hover {
+  cursor: pointer;
+  /* background-color: #333; */
+}
+/* #scrollToTop:active {
+  background-color: #555;
+}  */
+#scrollToTop.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* scroll to top end */
+
+/* Contact info */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.fa-envelope {
+  background: #cb2027;
+  color: white;
+}
+
+#contact a{
+  font-size: 30px;
+}
+
+/* Contact info */
+#contact p{
+  font-family:'Nanum Pen Script', cursive;
+  font-size: 20px;
+}
+
+#start_name{
+  text-align:center;
+  /* font-family: 'Sacramento', cursive; */
+  font-family:'Nanum Pen Script', cursive;
+  font-size: 40px;
+  font-weight: 400;
+  color: white;
+  padding: 0%;
+  margin: 0%;
+}
+
+
+@media only screen and (max-width: 640px) {
+  #frontEndTechs{
+    /* height: 105;
+    width: 278; */
+    display: none;
+  }
+
+  #start_name{
+    text-align:center;
+    /* font-family: 'Sacramento', cursive; */
+    font-family:'Nanum Pen Script', cursive;
+    font-size: 30px;
+    font-weight: 400;
+    color: white;
+    padding: 10%;
+    margin: 0%;
+  }
+}
