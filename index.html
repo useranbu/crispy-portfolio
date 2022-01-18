@@ -37,6 +37,7 @@ Code starts below -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">  
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 </head>
 <body>
     <div id="start" style="display: flex; justify-content: center; align-items: center; position: relative;">
@@ -44,13 +45,18 @@ Code starts below -->
             <h1 style="font-family: 'Roboto', sans-serif; font-size: 90px;">HELLO!</h1>
             <h1 id="start_name">I'm Anbarasan, a <strong>Software Developer</strong> with <strong>2+ years</strong> of experience <br>currently based in <strong>Chennai, India.</strong> Please go on read more about me below!</h1>
             <br>
-            <form action="files/Anbarasan_Ganeshkumar.pdf" method="GET" target="_blank" style="display: inline-block;">
+            <!-- <form action="files/Anbarasan_Ganeshkumar.pdf" method="GET" target="_blank" style="display: inline-block;">
                 <button id="download_button" class="button" title="Opens in a new tab">
                     <ul>
                         <li>View Resume</li>
                     </ul>
                 </button>
-            </form>
+            </form> -->
+            <button id="download_button" class="button" style="display: inline-block;">
+                <ul>
+                    <li><a style="text-decoration: none;font-family: 'Nanum Pen Script', cursive;color: white;font-size: 30px;" href="#contact">Contact</a></li>
+                </ul>
+            </button>
         </li>
     </div>
     <div id="about" style="text-align: center; padding: 30px;">
@@ -70,6 +76,57 @@ Code starts below -->
             </button>
         </form>
     </div>
+
+    <!-- <section class="projects" id="projects">
+        <h2 class="projects-title">Some of my Recent Projects</h2>
+        <div class="projects-container">
+          <div class="project-container project-card">
+            <img
+              src="files/assets/images/AdviseSlip.PNG"
+              alt="AdviseSlip_API"
+              class="project-pic"
+            />
+            <h3 class="project-title">Expense Tracker</h3>
+            <p class="project-details">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+              ratione vel inventore labore commodi modi quos culpa aut saepe!
+              Alias!
+            </p>
+            <a href="#" target="_blank" class="project-link">Check it Out</a>
+          </div>
+          <div class="project-container project-card">
+            <img
+              src="assets/images/netflixClone.png"
+              alt="netflic-clone"
+              loading="lazy"
+              class="project-pic"
+            />
+            <h3 class="project-title">Netflix Clone</h3>
+            <p class="project-details">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+              ratione vel inventore labore commodi modi quos culpa aut saepe!
+              Alias!
+            </p>
+            <a href="#" target="_blank" class="project-link">Check it Out</a>
+          </div>
+          <div class="project-container project-card">
+            <img
+              src="assets/images/greenyEarth.png"
+              alt="greeny-earth"
+              loading="lazy"
+              class="project-pic"
+            />
+            <h3 class="project-title">Greeny Earth</h3>
+            <p class="project-details">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+              ratione vel inventore labore commodi modi quos culpa aut saepe!
+              Alias!
+            </p>
+            <a href="#" target="_blank" class="project-link">Check it Out</a>
+          </div>
+        </div>
+      </section> -->
+
     <!-- <div style="height: 500px;">
         <h1 style="color: black; font-size: 60px;" id="name">Project</h1>
     </div>
@@ -77,7 +134,7 @@ Code starts below -->
         <h1 style="color: black; font-size: 60px;" id="name">workexp</h1>
     </div> -->
     <div id="skills" style="text-align: center;">
-        <h1 style="color: black; font-size: 60px;" id="name">My skills include, but are not limited to</h1>
+        <h1 style="color: black; font-size: 60px;" id="name" >My skills include, but are not limited to</h1>
         <img style="padding: 40px;" src="files/skills/Csharp.png" alt="C# Language" title="CSharp" width="144" height="144">
         <img style="padding: 40px;" src="files/skills/asp.net.png" alt="asp.net icon" title="ASP.NET" width="200" height="126">
         <img style="padding: 40px;" src="files/skills/MySQL.png" alt="MySQL icon" title="MySQL" width="225" height="169">
@@ -86,10 +143,11 @@ Code starts below -->
     <!-- <div style="height: 500px;">
         <h1 style="color: black; font-size: 60px;" id="name">insiping quortes</h1>
     </div> -->
-    <div id="contact" style="height: 300px; text-align: center;">
-        <h1 style="color: black; font-size: 60px;" id="name">Contact</h1>
-        <p>Please feel free to get in tough anytime, whether for inquiries or to just say hi.</p>     
-        <p>I'm always willing to hear from interesting people.</p>     
+    <div id="contact" style="height: 200px; text-align: center;">
+        <h1 style="color: black; font-size: 30px;" id="name">You can find me everywhere!</h1>
+        <!-- <p>Please feel free to get in tough anytime, whether for inquiries or to just say hi.</p>     
+        <p>I'm always willing to hear from interesting people.</p>      -->
+        <br>
         <a href="https://www.linkedin.com/in/anbarasan-ganeshkumar/" title="LinkedIn" target="_blank" class="fa fa-linkedin"></a>
         <a href="mailto:anbuarasan0344@gmail.com" title="E-Mail" target="_blank" class="fa fa-envelope"></a>
         <a href="https://twitter.com/anbu0344" title="Twitter" target="_blank" class="fa fa-twitter"></a>
@@ -101,3 +159,4 @@ Code starts below -->
 </html>
 <script src="JS/ScrollTop.js"></script>
 <script src="js/smooth-scroll.js"></script>
+<script src="js/animation.js"></script>
